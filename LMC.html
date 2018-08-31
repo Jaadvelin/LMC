@@ -25,22 +25,55 @@
 
 
   <div class="row">
-
+    <br>
       <!--Textbox donde se introducen las instrucciones-->
       <div class="col s4 center-align">
+          <h6 class="center-align blue lighten-5"> Input </h6>
+          <br>
+          <div class="center-align">
+              <input id="input" ></input>
+              <label for="input">Input</label>
+          </div>
+          <br>
+          <button id="parsear">Parsear instrucciones</button>
+          <br>
           <h6 class="center-align blue lighten-5">Introduzca instrucciones </h6>
           <div class="input-field col s12">
             <textarea id="insinp" class="materialize-textarea max-height:800px"></textarea>
             <label for="insinp">Introduzca instrucciones</label>
           </div>
-          <button id="parsear">Parsear instrucciones</button>
-          
       </div>
 
 
       <!--display de estados-->
       <div class="col s4">
-        2
+        <br>
+          <table class="center-align responsive-table blue lighten-5 bordered">
+            <thead></thead>
+            <tbody>
+              <tr>
+                <td class="white">Calculadora</td>
+                <td id="calc">000</td>
+              </tr>
+              <br class="white">
+              <tr>
+                <td class="white">Counter</td>
+                <td id="count">000</td>
+              </tr>
+              <br class="white">
+              <tr>
+                <td class="white">Interrupt</td>
+              </tr>
+              <tr>
+                <td id="intercalc">000</td>
+                <td id="interinst">000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="input-field col s12">
+            <textarea id="insinp" class="materialize-textarea max-height:800px" readonly="readonly"></textarea>
+            <label for="insinp">Log</label>
+          </div>
       </div>
 
 
@@ -48,171 +81,160 @@
       <div class="col s4">
 
         <table class="center-align responsive-table blue lighten-5 bordered">
-  <thead>
-    <tr>
-      <h6 class="center-align blue lighten-5">Instrucciones </h6>
-    </tr>
-  </thead>
+            <thead>
+              <tr>
+                <h6 class="center-align blue lighten-5">Instrucciones </h6>
+              </tr>
+            </thead>
 
-  <tbody>
-    <tr>
-      <td class="white">0-9</td>
-      <td id="inst00">000</td>
-      <td id="inst01">000</td>
-      <td id="inst02">000</td>
-      <td id="inst03">000</td>
-      <td id="inst04">000</td>
-      <td id="inst05">000</td>
-      <td id="inst06">000</td>
-      <td id="inst07">000</td>
-      <td id="inst08">000</td>
-      <td id="inst09">000</td>
-    </tr>
-    <tr>
-      <td class="white">10-19</td>
-      <td id="inst10">000</td>
-      <td id="inst11">000</td>
-      <td id="inst12">000</td>
-      <td id="inst13">000</td>
-      <td id="inst14">000</td>
-      <td id="inst15">000</td>
-      <td id="inst16">000</td>
-      <td id="inst17">000</td>
-      <td id="inst18">000</td>
-      <td id="inst19">000</td>
-    </tr>
-    <tr>
-      <td class="white">20-29</td>
-      <td id="inst20">000</td>
-      <td id="inst21">000</td>
-      <td id="inst22">000</td>
-      <td id="inst23">000</td>
-      <td id="inst24">000</td>
-      <td id="inst25">000</td>
-      <td id="inst26">000</td>
-      <td id="inst27">000</td>
-      <td id="inst28">000</td>
-      <td id="inst29">000</td>
-    </tr>
-    <tr>
-      <td class="white">30-39</td>
-      <td id="inst30">000</td>
-      <td id="inst31">000</td>
-      <td id="inst32">000</td>
-      <td id="inst33">000</td>
-      <td id="inst34">000</td>
-      <td id="inst35">000</td>
-      <td id="inst36">000</td>
-      <td id="inst37">000</td>
-      <td id="inst38">000</td>
-      <td id="inst39">000</td>
-    </tr>
-    <tr>
-      <td class="white">40-49</td>
-      <td id="inst40">000</td>
-      <td id="inst41">000</td>
-      <td id="inst42">000</td>
-      <td id="inst43">000</td>
-      <td id="inst44">000</td>
-      <td id="inst45">000</td>
-      <td id="inst46">000</td>
-      <td id="inst47">000</td>
-      <td id="inst48">000</td>
-      <td id="inst49">000</td>
-    </tr>
-    <tr>
-      <td class="white">50-59</td>
-      <td id="inst50">000</td>
-      <td id="inst51">000</td>
-      <td id="inst52">000</td>
-      <td id="inst53">000</td>
-      <td id="inst54">000</td>
-      <td id="inst55">000</td>
-      <td id="inst56">000</td>
-      <td id="inst57">000</td>
-      <td id="inst58">000</td>
-      <td id="inst59">000</td>
-    </tr>
-    <tr>
-      <td class="white">60-69</td>
-      <td id="inst60">000</td>
-      <td id="inst61">000</td>
-      <td id="inst62">000</td>
-      <td id="inst63">000</td>
-      <td id="inst64">000</td>
-      <td id="inst65">000</td>
-      <td id="inst66">000</td>
-      <td id="inst67">000</td>
-      <td id="inst68">000</td>
-      <td id="inst69">000</td>
-    </tr>
-    <tr>
-      <td class="white">70-79</td>
-      <td id="inst70">000</td>
-      <td id="inst71">000</td>
-      <td id="inst72">000</td>
-      <td id="inst73">000</td>
-      <td id="inst74">000</td>
-      <td id="inst75">000</td>
-      <td id="inst76">000</td>
-      <td id="inst77">000</td>
-      <td id="inst78">000</td>
-      <td id="inst79">000</td>
-    </tr>
-    <tr>
-      <td class="white">80-89</td>
-      <td id="inst80">000</td>
-      <td id="inst81">000</td>
-      <td id="inst82">000</td>
-      <td id="inst83">000</td>
-      <td id="inst84">000</td>
-      <td id="inst85">000</td>
-      <td id="inst86">000</td>
-      <td id="inst87">000</td>
-      <td id="inst88">000</td>
-      <td id="inst89">000</td>
-    </tr>
-    <tr>
-      <td class="white">90-99</td>
-      <td id="inst90">000</td>
-      <td id="inst91">000</td>
-      <td id="inst92">000</td>
-      <td id="inst93">000</td>
-      <td id="inst94">000</td>
-      <td id="inst95">000</td>
-      <td id="inst96">000</td>
-      <td id="inst97">000</td>
-      <td id="inst98">000</td>
-      <td id="inst99">000</td>
-    </tr>
-  </tbody>
-</table>
+            <tbody>
+              <tr>
+                <td class="white">0-9</td>
+                <td id="inst00">000</td>
+                <td id="inst01">000</td>
+                <td id="inst02">000</td>
+                <td id="inst03">000</td>
+                <td id="inst04">000</td>
+                <td id="inst05">000</td>
+                <td id="inst06">000</td>
+                <td id="inst07">000</td>
+                <td id="inst08">000</td>
+                <td id="inst09">000</td>
+              </tr>
+              <tr>
+                <td class="white">10-19</td>
+                <td id="inst10">000</td>
+                <td id="inst11">000</td>
+                <td id="inst12">000</td>
+                <td id="inst13">000</td>
+                <td id="inst14">000</td>
+                <td id="inst15">000</td>
+                <td id="inst16">000</td>
+                <td id="inst17">000</td>
+                <td id="inst18">000</td>
+                <td id="inst19">000</td>
+              </tr>
+              <tr>
+                <td class="white">20-29</td>
+                <td id="inst20">000</td>
+                <td id="inst21">000</td>
+                <td id="inst22">000</td>
+                <td id="inst23">000</td>
+                <td id="inst24">000</td>
+                <td id="inst25">000</td>
+                <td id="inst26">000</td>
+                <td id="inst27">000</td>
+                <td id="inst28">000</td>
+                <td id="inst29">000</td>
+              </tr>
+              <tr>
+                <td class="white">30-39</td>
+                <td id="inst30">000</td>
+                <td id="inst31">000</td>
+                <td id="inst32">000</td>
+                <td id="inst33">000</td>
+                <td id="inst34">000</td>
+                <td id="inst35">000</td>
+                <td id="inst36">000</td>
+                <td id="inst37">000</td>
+                <td id="inst38">000</td>
+                <td id="inst39">000</td>
+              </tr>
+              <tr>
+                <td class="white">40-49</td>
+                <td id="inst40">000</td>
+                <td id="inst41">000</td>
+                <td id="inst42">000</td>
+                <td id="inst43">000</td>
+                <td id="inst44">000</td>
+                <td id="inst45">000</td>
+                <td id="inst46">000</td>
+                <td id="inst47">000</td>
+                <td id="inst48">000</td>
+                <td id="inst49">000</td>
+              </tr>
+              <tr>
+                <td class="white">50-59</td>
+                <td id="inst50">000</td>
+                <td id="inst51">000</td>
+                <td id="inst52">000</td>
+                <td id="inst53">000</td>
+                <td id="inst54">000</td>
+                <td id="inst55">000</td>
+                <td id="inst56">000</td>
+                <td id="inst57">000</td>
+                <td id="inst58">000</td>
+                <td id="inst59">000</td>
+              </tr>
+              <tr>
+                <td class="white">60-69</td>
+                <td id="inst60">000</td>
+                <td id="inst61">000</td>
+                <td id="inst62">000</td>
+                <td id="inst63">000</td>
+                <td id="inst64">000</td>
+                <td id="inst65">000</td>
+                <td id="inst66">000</td>
+                <td id="inst67">000</td>
+                <td id="inst68">000</td>
+                <td id="inst69">000</td>
+              </tr>
+              <tr>
+                <td class="white">70-79</td>
+                <td id="inst70">000</td>
+                <td id="inst71">000</td>
+                <td id="inst72">000</td>
+                <td id="inst73">000</td>
+                <td id="inst74">000</td>
+                <td id="inst75">000</td>
+                <td id="inst76">000</td>
+                <td id="inst77">000</td>
+                <td id="inst78">000</td>
+                <td id="inst79">000</td>
+              </tr>
+              <tr>
+                <td class="white">80-89</td>
+                <td id="inst80">000</td>
+                <td id="inst81">000</td>
+                <td id="inst82">000</td>
+                <td id="inst83">000</td>
+                <td id="inst84">000</td>
+                <td id="inst85">000</td>
+                <td id="inst86">000</td>
+                <td id="inst87">000</td>
+                <td id="inst88">000</td>
+                <td id="inst89">000</td>
+              </tr>
+              <tr>
+                <td class="white">90-99</td>
+                <td id="inst90">000</td>
+                <td id="inst91">000</td>
+                <td id="inst92">000</td>
+                <td id="inst93">000</td>
+                <td id="inst94">000</td>
+                <td id="inst95">000</td>
+                <td id="inst96">000</td>
+                <td id="inst97">000</td>
+                <td id="inst98">000</td>
+                <td id="inst99">000</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
 
+          <tr>
+              <button id="resrun">Reseteo</button>
+              <button id="play">Por paso</button>
+              <button id="fasfo">Instantaneo</button>
+          </tr>
+          <tr>
+              <button id"resettot">Borrar todo</button>
+          </tr>
 
 
       </div>
 
   </div>
-
-  <!--<div class="row">
-   <div class="column1">
-      <h1>LMC</h1>
-   </div>
-
-   <div class="column1">
-     <h1>LMC</h1>
-   </div>
-
-   <div class="column1">
-     <h1>LMC</h1>
-   </div>
-
- </div>-->
-
-
-
-
-<button>Test</button>
 
 
 <!--JavaScript at end of body for optimized loading-->
