@@ -35,7 +35,7 @@
               <label for="input">Input</label>
           </div>
           <br>
-          <button id="parsear">Parsear instrucciones</button>
+          <button id="parsear" onclick="getInstructions()">Parsear instrucciones</button>
           <br>
           <h6 class="center-align blue lighten-5">Introduzca instrucciones </h6>
           <div class="input-field col s12">
@@ -47,7 +47,6 @@
 
       <!--display de estados-->
       <div class="col s4">
-        <br>
           <table class="center-align responsive-table blue lighten-5 bordered">
             <thead></thead>
             <tbody>
@@ -60,10 +59,17 @@
                 <td class="white">Counter</td>
                 <td id="count">000</td>
               </tr>
-              <br class="white">
+            </tbody>
+          </table>
+        <br>
+          <table class="center-align responsive-table blue lighten-5 bordered">
+            <thead></thead>
               <tr>
                 <td class="white">Interrupt</td>
+                <td class="white"></td>
               </tr>
+                <td class="white">Calc</td>
+                <td class="white">inst</td>
               <tr>
                 <td id="intercalc">000</td>
                 <td id="interinst">000</td>
@@ -223,9 +229,9 @@
           <br>
 
           <tr>
-              <button id="resrun">Reseteo</button>
               <button id="play">Por paso</button>
               <button id="fasfo">Instantaneo</button>
+              <button id="resrun">Reseteo</button>
           </tr>
           <tr>
               <button id"resettot">Borrar todo</button>
